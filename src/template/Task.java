@@ -11,7 +11,7 @@ public abstract class Task {
         this.auditTrail = auditTrail;
     }
 
-    public void execute(){
+    public final void execute(){
         auditTrail.record();
         doExecute();
     }
